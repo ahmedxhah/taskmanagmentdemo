@@ -54,15 +54,12 @@
                 </form>
 
                 <hr class="my-8"/>
-
-                @if (Route::has('password.request'))
-                    <p class="mt-4">
-                        <a class="text-sm font-medium text-primary-600 hover:underline"
-                           href="{{ route('password.request') }}">
-                            {{ __('Forgot your password?') }}
-                        </a>
-                    </p>
-                @endif
+                <p class="mt-4">
+                    <a class="text-sm font-medium text-primary-600 hover:underline"
+                       href="{{ route('register') }}">{{ __('Create a New Account?') }}</a>
+                </p>
+               
+                
             </div>
         </div>
     </div>
